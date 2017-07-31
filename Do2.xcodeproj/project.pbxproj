@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					DC5C30061F2A4E8000A19410 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 94BJ99YKG3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94BJ99YKG3;
 				INFOPLIST_FILE = Do2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avalabs.Do2;
@@ -274,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94BJ99YKG3;
 				INFOPLIST_FILE = Do2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avalabs.Do2;
