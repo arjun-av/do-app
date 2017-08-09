@@ -26,8 +26,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday, July 31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKu-E8-IYN">
-                                        <rect key="frame" x="16" y="28.5" width="95" height="15.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <rect key="frame" x="16" y="24" width="124.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -89,7 +89,7 @@
                                             <outlet property="timeDisplayLabel" destination="v67-4k-Dmr" id="5Ef-t9-wTr"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TileItemCell" rowHeight="45" id="e4R-zW-ipq" userLabel="TileItemCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TileItemCell" rowHeight="45" id="e4R-zW-ipq" userLabel="TileItemCell" customClass="TileItemCell" customModule="Do2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="83" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e4R-zW-ipq" id="BBN-MN-8eh">
@@ -105,6 +105,9 @@
                                                     <state key="normal" title="★">
                                                         <color key="titleColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="taskStatusButtonClicked:" destination="e4R-zW-ipq" eventType="touchUpInside" id="2Pe-SM-lgB"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To do item number one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9C-1i-eQA">
                                                     <rect key="frame" x="64" y="14" width="287" height="18"/>
@@ -121,8 +124,12 @@
                                                 <constraint firstItem="H9C-1i-eQA" firstAttribute="leading" secondItem="V5q-Re-8H3" secondAttribute="trailing" constant="8" id="yEo-lg-BnN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskStatusButton" destination="V5q-Re-8H3" id="Ww4-tz-KKT"/>
+                                            <outlet property="taskTitleLabel" destination="H9C-1i-eQA" id="eNo-YY-kx2"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TileFooterCell" rowHeight="45" id="5XE-tM-cbV" userLabel="TileFooterCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TileFooterCell" rowHeight="45" id="5XE-tM-cbV" userLabel="TileFooterCell" customClass="TileFooterCell" customModule="Do2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="128" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5XE-tM-cbV" id="ieH-w0-V3R">
@@ -144,6 +151,9 @@
                                                     <state key="normal" title="●">
                                                         <color key="titleColor" red="0.20000000000000001" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="taskStatusButtonClicked:" destination="5XE-tM-cbV" eventType="touchUpInside" id="s2n-lz-EdT"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -153,6 +163,10 @@
                                                 <constraint firstItem="2k1-CC-kYt" firstAttribute="centerY" secondItem="ieH-w0-V3R" secondAttribute="centerY" id="ubo-mK-6a4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskStatusButton" destination="2k1-CC-kYt" id="JaX-ib-fcg"/>
+                                            <outlet property="taskTitleLabel" destination="P2q-HG-dte" id="eNF-6x-eTL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
