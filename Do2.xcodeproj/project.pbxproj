@@ -144,6 +144,7 @@
 					DC5C30061F2A4E8000A19410 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 94BJ99YKG3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};

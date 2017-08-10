@@ -9,9 +9,9 @@
 import Foundation
 
 class RoutineItem{
-    private var _title: String //Routine Item's title
-    private var _isComplete: status //Routine item's completion status
-    private var _itemPriority: priority //Routine item's priority
+    fileprivate var _title: String //Routine Item's title
+    fileprivate var _isComplete: status //Routine item's completion status
+    fileprivate var _itemPriority: priority //Routine item's priority
     
     var title: String {
         set(newValue) {
