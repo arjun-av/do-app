@@ -10,6 +10,20 @@ import UIKit
 
 @IBDesignable extension UIView {
     
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        set {
+            self.layer.cornerRadius = newValue
+            
+            // Don't touch the masksToBound property if a shadow is needed in addition to the cornerRadius
+  /*          if shadow == false {
+                self.layer.masksToBounds = true
+            }*/
+        }
+    }
+    
     /* The color of the shadow. Defaults to opaque black. Colors created
      * from patterns are currently NOT supported. Animatable. */
     @IBInspectable var shadowColor: UIColor? {
@@ -18,7 +32,7 @@ import UIKit
         }
         get {
             if let color = layer.shadowColor {
-                return UIColor(cgColor:color)
+                return UIColor(cgColor: color)
             }
             else {
                 return nil
